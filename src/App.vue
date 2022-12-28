@@ -61,15 +61,15 @@
       <v-container fluid fill-height  class="d-none d-md-flex">
         <v-spacer></v-spacer>
 
-        <v-btn  large color="#80a0aa" style="color: white;" class="navigation mx-4 font " to="project" active-class="no-active" >
+        <v-btn  large color="#3f4652" style="color: white;" class="navigation mx-4 font " to="project" active-class="no-active" >
           Mindset
         </v-btn>
        
-        <v-btn large color="#80a0aa" style="color: white;" class="navigation mx-4 font"  min-width=200px; to="playground" active-class="no-active" > 
+        <v-btn large color="#3f4652" style="color: white;" class="navigation mx-4 font"  min-width=200px; to="playground" active-class="no-active" > 
           Playround
         </v-btn>
    
-        <v-btn large color="#80a0aa" style="color: white;" class="navigation mx-4 font"  to="team" active-class="no-active" >
+        <v-btn large color="#3f4652" style="color: white;" class="navigation mx-4 font"  to="team" active-class="no-active" >
           Team
         </v-btn>
       </v-container>
