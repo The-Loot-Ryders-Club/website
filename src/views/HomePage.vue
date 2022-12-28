@@ -73,7 +73,7 @@ export default {
 
 .landing-text {
     font-size: 30px;
-    color:#272c33 !important;
+    color:#3f4652 !important;
 }
 .fix{
     position:fixed;
