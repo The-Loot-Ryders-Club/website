@@ -46,7 +46,7 @@
 
     <v-app-bar
       app
-      color="transparent"
+      color="#ADD8E6"
       height=110%
       flat
       hide-on-scroll
