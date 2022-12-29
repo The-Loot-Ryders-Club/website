@@ -107,4 +107,19 @@ export default {
         margin-bottom: 10em;
     }
 }
+
+@media screen and (min-height: 2000px) {
+    .fix {
+        width: 60%;
+        right: 0%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .fix {
+        width: 30%;
+        right: 10%;
+    }
+}
+
 </style>

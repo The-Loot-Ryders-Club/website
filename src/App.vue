@@ -49,6 +49,7 @@
       color="transparent"
       height=110%
       flat
+      hide-on-scroll
       
     >
       <router-link to="/">
@@ -66,7 +67,7 @@
         </v-btn>
        
         <v-btn large color="#3f4652" style="color: white;" class="navigation mx-4 font"  min-width=200px; to="playground" active-class="no-active" > 
-          Playround
+          PlayGround
         </v-btn>
    
         <v-btn large color="#3f4652" style="color: white;" class="navigation mx-4 font"  to="team" active-class="no-active" >
@@ -79,7 +80,7 @@
     <!--  -->
     <v-main style="background-color:#ADD8E6">
       <router-view/>
-    </v-main>
+   </v-main>
   </v-app>
 </template>
 
