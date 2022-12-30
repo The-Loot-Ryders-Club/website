@@ -1,6 +1,6 @@
 <template>
     <v-container class="pa-2 mt-5">
-        <v-card rounded  class="mr-9 ml-9 pa-3" style="background:#AFDBF5">
+        <v-card rounded  class="mr-9 ml-9 pa-3" style="background:#189AB4">
             <v-img :src="banner" />
         </v-card>
         <v-row sm="4" class="mt-12 mr-8 ml-8 " justify="center" align="center">
@@ -8,8 +8,8 @@
                 <div class="losung-alignment">
                     <p>What we do?</p>
                     <p>
-                        Always <spam class="losung-words" style="color:#f4760d">Riding</spam>,<br/>
-                        Always <spam class="losung-words" style="color:#fec511">Looting</spam>!
+                        Always <span class="losung-words" style="color:#f4760d">Riding</span>,<br/>
+                        Always <span class="losung-words" style="color:#fec511">Looting</span>!
                     </p>
                 </div>
             </v-col>
