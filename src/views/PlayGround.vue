@@ -15,10 +15,11 @@
         </h3>
         <v-row>
             <v-col align="center">
-                <v-card max-width="400" class="pa-4" color="#189AB4"> 
+                <!-- <v-card max-width="410px" class="" color="#189AB4">  -->
                     <!-- <v-img :src="'https://nftstorage.link/ipfs/bafybeiegfhz2w2lfhk63alld3uoraioc6zh7d77ako4mr3rn2a2i5e5kju/' + pic_id + '.png' "/>  -->
-                    <v-img :src="require('../assets/output/img/' + pic_id + '.png')"/>
-                </v-card>
+                    <img class="main-img" :src="require('../assets/output/img/' + pic_id + '.png')"/>
+                    <!-- <img :src="this.images[pic_id].pathLong"/> -->
+                <!-- </v-card> -->
             </v-col>
         </v-row> 
         <v-row>
@@ -107,6 +108,7 @@ const zeroPad = (num, places) => String(num).padStart(places, '0')
 export default {
     data: () => ({
         pic_id:'0381',
+        pic_url: '../assets/output/img/0381.png',
         new_link:'',
         pro_pfp: pro_pfp,
         skin: ['Acid', 'Avatar', 'Easter', 'Grey', 'Orange'],
@@ -118,6 +120,7 @@ export default {
         selected_option_3: '',
         selected_option_4: '',
         idx:idx,
+        images:[],
         
     }), 
     methods: {
@@ -136,6 +139,8 @@ export default {
                 return true;
             })
             this.pic_id = (zeroPad(entry[0]['id'],4))
+            // this.pic_id=entry[0]["id"]
+            console.log(this.images[0].pathLong)
         },
 
         onChange_1(option){
@@ -171,9 +176,13 @@ export default {
                 })
                 .catch(() => alert('An error sorry'));
         },
+        importAll(r) {
+            r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })));
+        },
     },
 
     mounted(){
+        this.importAll(require.context('../assets/output/img/', true, /\.png$/));
         this.selected_option_1= 'Blue',
         this.selected_option_2= 'Acid',
         this.selected_option_3= 'Jacket',
@@ -183,6 +192,12 @@ export default {
 }
 </script>
 <style scoped>
+.main-img {
+    border: 6px solid #189AB4;
+    /* padding: 15px; */
+    max-width:400px;
+}
+
 .text-f {
     font-family: "Questrian";
     color:#272c33;
