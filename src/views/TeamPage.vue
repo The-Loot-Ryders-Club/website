@@ -13,7 +13,7 @@
                         min-height="" 
                         max-width="600px" 
                         outlined 
-                        style="background:#7393B3"
+                        style="background:#B9D9EB"
                 >
                     <v-img :src="huge_pfp"/>
                     <v-card-title style="font-size: 24px;" class="pl-0 text-f"> Huge Boba
@@ -36,7 +36,7 @@
                         min-height="" 
                         max-width="600px" 
                         outlined 
-                        style="background:#7393B3"
+                        style="background:#B9D9EB"
                 >
                     <v-img :src="akz_pfp"/>
                     <v-card-title style="font-size: 24px;" class="pl-0 text-f">AKZ
@@ -60,7 +60,7 @@
                         min-height="" 
                         max-width="600px" 
                         outlined 
-                        style="background:#7393B3"
+                        style="background:#B9D9EB"
                 >
                     <v-img :src="pro_pfp"/>
                     <v-card-title style="font-size: 24px;" class="pl-0 text-f">Pro
