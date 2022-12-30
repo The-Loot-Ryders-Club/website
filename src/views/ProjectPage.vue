@@ -1,5 +1,5 @@
 <template>
-    <v-container class="pa-2 mt-5">
+    <v-container class="pr-2 pl-2 mt-5 pb-10">
         <v-card rounded  class="mr-9 ml-9 pa-3" style="background:#189AB4">
             <v-img :src="banner" />
         </v-card>
@@ -19,7 +19,8 @@
 
                 <p class="description">Each Ryder NFT gains access to exclusive rewards such as, exclusive giveaways and raffles, merch, access to our staking and reward system and loads more to be announced.
                                          Over at Loot Ryders, we aim to be one of the top Projects on sui and intend to offer several services to all SUI NFT communities as a whole.
-                                     Creating platforms that can help build and foster relationships with every project in the Sui space. </p>
+                                     Creating platforms that can help build and foster relationships with every project in the Sui space. 
+                </p>
             </v-col>
         </v-row>
     </v-container>
