@@ -17,9 +17,10 @@
             <v-col align="center">
                 <!-- <v-card max-width="410px" class="" color="#189AB4">  -->
                     <!-- <v-img :src="'https://nftstorage.link/ipfs/bafybeiegfhz2w2lfhk63alld3uoraioc6zh7d77ako4mr3rn2a2i5e5kju/' + pic_id + '.png' "/>  -->
-                    <img class="main-img" :src="require('../assets/output/img/' + pic_id + '.png')"/>
+                        <img class="main-img" :src="require('../assets/output/img/' + pic_id + '.png')"/>
                     <!-- <img :src="this.images[pic_id].pathLong"/> -->
-                <!-- </v-card> -->
+                    <!-- <v-lazy-image :src="require('../assets/output/img/0001.png')"/>  -->
+             <!-- </v-card> -->
             </v-col>
         </v-row> 
         <v-row>
@@ -139,8 +140,6 @@ export default {
                 return true;
             })
             this.pic_id = (zeroPad(entry[0]['id'],4))
-            // this.pic_id=entry[0]["id"]
-            console.log(this.images[0].pathLong)
         },
 
         onChange_1(option){
@@ -176,13 +175,13 @@ export default {
                 })
                 .catch(() => alert('An error sorry'));
         },
-        importAll(r) {
-            r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })));
-        },
+        // importAll(r) {
+        //     r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })));
+        // },
     },
 
     mounted(){
-        this.importAll(require.context('../assets/output/img/', true, /\.png$/));
+        // this.importAll(require.context('../assets/output/img/', true, /\.png$/));
         this.selected_option_1= 'Blue',
         this.selected_option_2= 'Acid',
         this.selected_option_3= 'Jacket',
@@ -215,6 +214,12 @@ export default {
 .fb-btn.v-btn--outlined {
     border: thin solid #189AB4;
   }
+  
+@media screen and (max-width: 435px) {
+    .main-img {
+        max-width: 100%
+    }
+}
 
 ::v-deep .v-list-item--link::before { background-color: #189AB4;  }
 ::v-deep .theme--light.v-list-item:hover::before { opacity: 0.3; }
