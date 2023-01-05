@@ -14,7 +14,7 @@
     </v-container>
 </template>
 <script>
-import rabbit_01 from "../assets/HomePage/rabbit_01.png"
+import rabbit_01 from "../assets/HomePage/rabbit_02.png"
 export default {
     name: "HomePage",
     data: () => ({

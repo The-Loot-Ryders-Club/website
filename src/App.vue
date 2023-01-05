@@ -25,7 +25,7 @@
 
           <v-list-item class="align-center justify-center fill-height font">
             <v-btn color="#3f4652" elevation="12" style="color: white ;font-size: 12px; min-width: 200px;" >
-              <router-link style="all:unset" to="/project">Ideology</router-link>
+              <router-link style="all:unset" to="/project">MindSet</router-link>
             </v-btn>
           </v-list-item>
 
