@@ -9,7 +9,16 @@
                     A New Generation of Rabbits <br/> 
                     That Will Bring You Loot and Luck in 2023!
                 </p>
+                
+                <p style="margin-top:125px">
+                    Exclusively only on: 
+                    <img style="max-height:150px; margin-left: -20px" src="../assets/HomePage/sui-logo.png"/>
+                </p>
+       
+                <!-- <p style="margin-top:80px"> </p> -->
+                <!-- <p><img style="max-height:200px" src="../assets/HomePage/sui-logo.png"/></p> -->
             </v-col>
+            
         </v-row>
     </v-container>
 </template>
@@ -24,6 +33,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+
+img {
+    vertical-align: middle;
+}
 .logo-img {
     padding-right: 10%;
     margin-top: 2%;
