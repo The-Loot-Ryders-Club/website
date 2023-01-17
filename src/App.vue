@@ -24,19 +24,19 @@
 
 
           <v-list-item class="align-center justify-center fill-height font">
-            <v-btn color="#3f4652" elevation="12" style="color: white ;font-size: 12px; min-width: 200px;" >
-              <router-link style="all:unset" to="/project">MindSet</router-link>
+            <v-btn large color="#3f4652" elevation="12" style="color: white ;font-size: 12px; min-width: 200px;" >
+              <router-link style="all:unset" to="/project">Roadmap</router-link>
             </v-btn>
           </v-list-item>
 
            <v-list-item class="mt-6 align-center justify-center fill-height font">
-            <v-btn color="#3f4652" elevation="12" style="color: white ; font-size: 12px; min-width: 200px;">
+            <v-btn large color="#3f4652" elevation="12" style="color: white ; font-size: 12px; min-width: 200px;">
              <router-link style="all:unset" to="/playground">PlayGround</router-link>
             </v-btn>
           </v-list-item>
 
           <v-list-item class="mt-6 align-center justify-center fill-height font">
-            <v-btn color="#3f4652" elevation="12" style="color: white ; font-size: 12px; min-width: 200px;">
+            <v-btn large color="#3f4652" elevation="12" style="color: white ; font-size: 12px; min-width: 200px;">
              <router-link style="all:unset" to="/team">Team</router-link>
             </v-btn>
           </v-list-item>
@@ -46,7 +46,7 @@
 
     <v-app-bar
       app
-      color="#ADD8E6"
+      color="#9bcde0"
       height=110%
       flat
       hide-on-scroll
@@ -63,7 +63,7 @@
         <v-spacer></v-spacer>
 
         <v-btn  large color="#3f4652" style="color: white;" class="navigation mx-4 font " to="project" active-class="no-active" >
-          Mindset
+          Roadmap
         </v-btn>
        
         <v-btn large color="#3f4652" style="color: white;" class="navigation mx-4 font"  min-width=200px; to="playground" active-class="no-active" > 
@@ -73,12 +73,34 @@
         <v-btn large color="#3f4652" style="color: white;" class="navigation mx-4 font"  to="team" active-class="no-active" >
           Team
         </v-btn>
+
+        <v-btn
+            class="mx-4"
+            color="#3f4652"
+            large
+            dark
+            href="https://twitter.com/LootRydersClub" target="_blank"
+         
+        >
+            <v-icon>$vuetify.icons.twitter</v-icon>
+        </v-btn>
+        <v-btn
+            class="mx-4"
+            color="#3f4652"
+            icons
+            large
+            dark
+            href="https://discord.gg/rHeXNFgSJj" target="_blank"
+         
+        >
+            <v-icon>$vuetify.icons.discord</v-icon>
+        </v-btn>
       </v-container>
     </v-app-bar>
 
     
     <!--  -->
-    <v-main style="background-color:#ADD8E6">
+    <v-main style="background-color:#9bcde0"> <!-- ADD8E6 -->
       <router-view/>
    </v-main>
   </v-app>

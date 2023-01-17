@@ -24,7 +24,7 @@
                             href="https://twitter.com/HugeBoba" target="_blank"
                             color="transparent"
                         >
-                            <v-icon color="red" >$vuetify.icons.twitter</v-icon>
+                            <v-icon color="#272c33" >$vuetify.icons.twitter</v-icon>
                         </v-btn>
                       
                     </v-card-title>
@@ -47,7 +47,7 @@
                             href="https://twitter.com/HayKayZee2" target="_blank"
                             color="transparent"
                         >
-                            <v-icon color="red" >$vuetify.icons.twitter</v-icon>
+                            <v-icon color="#272c33" >$vuetify.icons.twitter</v-icon>
                         </v-btn>
                     </v-card-title>
                     <v-card-subtitle class="pl-0 pt-2 text-f" style="font-size: 18px">Co-Founder / CEO</v-card-subtitle>
@@ -71,7 +71,7 @@
                             href="https://twitter.com/PRO100SKILL8" target="_blank"
                             color="transparent"
                         >
-                            <v-icon color="red" >$vuetify.icons.twitter</v-icon>
+                            <v-icon color="#272c33" >$vuetify.icons.twitter</v-icon>
                         </v-btn>
                     </v-card-title> 
                     <v-card-subtitle class="pl-0 pt-2 text-f" style="font-size: 18px">Co-Founder / CXO </v-card-subtitle>
@@ -93,7 +93,7 @@
                             href="https://twitter.com/aescobarindo" target="_blank"
                             color="transparent"
                         >
-                            <v-icon color="red" >$vuetify.icons.twitter</v-icon>
+                            <v-icon color="#272c33" >$vuetify.icons.twitter</v-icon>
                         </v-btn>
                     </v-card-title> 
                     <v-card-subtitle class="pl-0 pt-2 text-f" style="font-size: 18px">Community Manager</v-card-subtitle>

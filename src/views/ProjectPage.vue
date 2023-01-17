@@ -1,6 +1,6 @@
 <template>
     <v-container class="pr-2 pl-2 mt-5 pb-10">
-        <v-card rounded  class="mr-9 ml-9 pa-3" style="background:#189AB4">
+        <v-card elevation="6" rounded  class="mr-9 ml-9 pa-3" style="background:#c2e0ec">
             <v-img :src="banner" />
         </v-card>
         <v-row sm="4" class="mt-12 mr-8 ml-8 " justify="center" align="center">
@@ -9,7 +9,7 @@
                     <p>What we do?</p>
                     <p>
                         Always <span class="losung-words" style="color:#f4760d">Riding</span>,<br/>
-                        Always <span class="losung-words" style="color:#fec511">Looting</span>!
+                        Always <span class="losung-words" style="color:#c6a229">Looting</span>!
                     </p>
                 </div>
             </v-col>
@@ -23,6 +23,110 @@
                 </p>
             </v-col>
         </v-row>
+        <h2 class="text-f" 
+            style="text-align:center;
+                    margin-top:60px; 
+                    margin-bottom:50px;
+                    color:#3f4652 "
+            >Our Roadmap:
+        </h2>
+        <v-row class="mt-12 mr-8 ml-8 mb-10">
+            <v-col cols="12" lg="3" md="12"  sm="12" xs="12">
+                <v-card 
+                    color="#c2e0ec"
+                    hover 
+                    elevation="8"
+                    rounded
+                    class="mx-auto" 
+                    max-height="400px" 
+                    max-width="400px">
+                        <v-card-title  
+                            primary-title 
+                            class="v-card-title-text justify-center text-f pt-8 pb-8" 
+                            style="color:#f4760d"
+                            >Minting Page
+                        </v-card-title>
+                        <v-card-text class="v-card-main-text justify-center text-center text-f pb-8">
+                            We have started developing and would be releasing our own staking page, with 
+                            the plan to fullfill all our thoughts and set a right fundamental functionality 
+                            for our collection.
+                        </v-card-text>
+                </v-card>
+            </v-col>
+            <v-col cols="12" lg="3" md="12" sm="12" xs="12">
+                <v-card 
+                    color="#c2e0ec"
+                    hover 
+                    elevation="8"
+                    rounded
+                    class="mx-auto" 
+                    max-height="400px" 
+                    max-width="400px">
+                        <v-card-title  
+                            primary-title 
+                            class="v-card-title-text justify-center text-f pt-8 pb-8" 
+                            style="color:#c6a229"
+                            >Staking Page
+                        </v-card-title>
+                        <v-card-text class="v-card-main-text justify-center text-center text-f pb-8">
+                            Staking would be vital utility to our Lootboxes idea. It would be 
+                            the only utility that will allow yielding of our future token that will be essential
+                            for iteractions within our ecosystem.
+                        </v-card-text>
+                </v-card>
+            </v-col>
+            <v-col cols="12" lg="3" md="12" sm="12" xs="12">
+                <v-card 
+                    color="#c2e0ec"
+                    hover 
+                    elevation="8"
+                    rounded
+                    class="mx-auto" 
+                    max-height="400px" 
+                    max-width="400px">
+                        <v-card-title  
+                            primary-title 
+                            class="v-card-title-text justify-center text-f pt-8 pb-8" 
+                            style="color:#f4760d"
+                            >Reward System
+                        </v-card-title>
+                        <v-card-text class="v-card-main-text justify-center text-center text-f pb-8">
+                            Reward system is the last step towards preparation & fulltilling 
+                            the fundamentals for the Lootbox system. It's Functionality would be implemented 
+                            on top of the staking utility and our NFT's.
+                        </v-card-text>
+                </v-card>
+            </v-col>
+            <v-col cols="12" lg="3" md="12"  sm="12" xs="12">
+                <v-card 
+                    color="#c2e0ec"
+                    hover 
+                    elevation="8"
+                    rounded
+                    class="mx-auto" 
+                    max-height="400px" 
+                    max-width="400px">
+                        <v-card-title  
+                            primary-title 
+                            class="v-card-title-text justify-center text-f pt-8 pb-8" 
+                            style="color:#c6a229"
+                            >Lootboxes
+                        </v-card-title>
+                        <v-card-text class="v-card-main-text justify-center text-center text-f pb-8">
+                            Goal for our early roadmap would be the finalization of Lootboxes
+                            system, that shares totally new experience to our users. You will be able to 
+                            unlock new real-world rewards and benefits.
+                        </v-card-text>
+                </v-card>
+            </v-col>
+        </v-row>
+        <h2 class="text-f" 
+            style="text-align:center;
+                    margin-top:60px; 
+                    margin-bottom:40px;
+                    color:#3f4652 "
+            >To be Continued ...
+        </h2>
     </v-container>
 </template>
 <script>
@@ -34,6 +138,20 @@ export default {
 }
 </script>
 <style scoped>
+.text-f {
+    font-family: "Questrian";
+    color:#272c33;
+}
+
+.v-card-title-text{
+    font-size: 26px;
+
+}
+
+.v-card-main-text{
+    font-size: 16px
+}
+
 .losung-words{
     font-size: 60px
 }
@@ -73,6 +191,14 @@ export default {
     .losung-words{
         font-size: 48px;
     }
+
+    /* .v-card-main-text {
+        font-size: 14px;
+    }
+
+    .v-card-title-text{
+        font-size: 18px
+    } */
 }
 
 @media screen and (max-width: 460px) {
