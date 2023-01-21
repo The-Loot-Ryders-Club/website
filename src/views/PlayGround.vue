@@ -62,7 +62,7 @@
                     class="font-t"      
                     v-model="selected_option_2"
                     @change="onChange_2(selected_option_2)"
-                    :items="skin"
+                    :items="body"
                     label="Skin"
                     background-color="#B9D9EB"
                     color="#189AB4"
@@ -100,6 +100,13 @@
                 ></v-select>
             </v-col>
         </v-row>
+        <h3 class="text-f " 
+            style="text-align:center;
+                    margin-top:20px; 
+                    margin-bottom:30px;
+                    color:#3f4652"
+            >More trait & layouts to Come!
+        </h3>
     </v-container>
 </template>
 <script>
@@ -108,13 +115,13 @@ import idx from "../assets/json-output.js"
 const zeroPad = (num, places) => String(num).padStart(places, '0')
 export default {
     data: () => ({
-        pic_id:'0381',
-        pic_url: '../assets/output/img/0381.png',
+        pic_id:'381',
+        pic_url: '../assets/output/img/381.png',
         new_link:'',
         pro_pfp: pro_pfp,
-        skin: ['Acid', 'Avatar', 'Easter', 'Grey', 'Orange'],
-        clothes: ["Akatsuki", "Jacket", "Jumper", "Rider", "Suit"],
-        background: ["Blue", "Gold", "Orange", "Green", "Red"],
+        background: ['CreamWhite', 'Fire', 'Gold', 'GTAVibe', 'Softpink'],
+        body: ["Aquatic", "Emerald", "Evil", "Rediation", "Zombie"],
+        clothes: ["BobberHoodie", "Decoratedshirt", "Downjacket", "Hoodie", "Prisoner"],
         expression: ["Exp_1", "Exp_2", "Exp_3", "Exp_4", "Exp_5"],
         selected_option_1: '',
         selected_option_2: '',
@@ -130,7 +137,7 @@ export default {
                         background: this.selected_option_1,
                         body: this.selected_option_2,
                         clothes: this.selected_option_3,
-                        expressions: this.selected_option_4}
+                        expression: this.selected_option_4}
             // console.log(filter)
             let entry = idx.filter(function(item) {
                 for (var key in filter) {
@@ -139,7 +146,9 @@ export default {
                 }
                 return true;
             })
-            this.pic_id = (zeroPad(entry[0]['id'],4))
+            this.pic_id = (zeroPad(entry[0]['id'],3))
+            // console.log(filter, entry)
+            // this.pic_id = entry[0]['id']
         },
 
         onChange_1(option){
@@ -182,9 +191,9 @@ export default {
 
     mounted(){
         // this.importAll(require.context('../assets/output/img/', true, /\.png$/));
-        this.selected_option_1= 'Blue',
-        this.selected_option_2= 'Acid',
-        this.selected_option_3= 'Jacket',
+        this.selected_option_1= 'GTAVibe',
+        this.selected_option_2= 'Zombie',
+        this.selected_option_3= 'BobberHoodie',
         this.selected_option_4= 'Exp_1',
         this.generate_nft()
     }, 

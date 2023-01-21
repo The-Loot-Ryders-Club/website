@@ -19,7 +19,9 @@
         >
 
           <v-list-item>
+            <router-link to="/">
             <v-img class="mb-3" max-width="150px" :src="nav_logo"/>
+            </router-link>
           </v-list-item>
 
 
@@ -75,8 +77,10 @@
         </v-btn>
 
         <v-btn
-            class="mx-4"
-            color="#3f4652"
+            class="mx-2"
+            color="white"
+            style="background: #3f4652"
+            icon
             large
             dark
             href="https://twitter.com/LootRydersClub" target="_blank"
@@ -86,7 +90,9 @@
         </v-btn>
         <v-btn
             class="mx-4"
-            color="#3f4652"
+            olor="white"
+            style="background: #3f4652"
+            icon
             icons
             large
             dark
