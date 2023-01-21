@@ -10,9 +10,9 @@
                     That Will Bring You Loot and Luck in 2023!
                 </p>
                 
-                <p style="margin-top:125px">
+                <p class="top-m-sui">
                     Exclusively only on: 
-                    <img style="max-height:150px; margin-left: -20px" src="../assets/HomePage/sui-logo.png"/>
+                    <img style="max-height:150px;" src="../assets/HomePage/sui-logo.png"/>
                 </p>
        
                 <!-- <p style="margin-top:80px"> </p> -->
@@ -34,8 +34,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 
+.top-m-sui {
+        margin-top: 125px;
+    }
+
 img {
     vertical-align: middle;
+    margin-left: -20px
 }
 .logo-img {
     padding-right: 10%;
@@ -61,6 +66,7 @@ img {
 // }
 
 @media screen and (min-width: 700px) and (orientation:landscape)   {
+    
   .logo-img {
     // margin: 20% auto auto auto ;
     padding-right: 10%;
@@ -102,6 +108,20 @@ img {
 .container-scoped{ position: absolute; bottom: 0px }
 
 @media screen and (max-width: 750px){
+
+    .top-m-sui {
+        margin-top: 50px;
+        font-size: 18px; 
+       
+        img {
+            margin-top: -20px;
+            margin-left: -10px;
+            width: 250px;
+            // max-width: 190px;
+            // margin-left: 300px;
+            // margin-left: -60px;
+        }
+    }
     .landing-text {
         font-size: 20px;
         text-align: center;
@@ -111,9 +131,12 @@ img {
         font-size: 28px;
     }
 
+    // .fix {
+    //     right: 25%;
+    //     width: 50%;
+    // }
     .fix {
-        right: 25%;
-        width: 50%;
+        width: 45%
     }
 
     .m-bottom {
