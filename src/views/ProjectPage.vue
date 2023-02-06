@@ -122,22 +122,49 @@
         </v-row>
         <h2 class="text-f" 
             style="text-align:center;
-                    margin-top:60px; 
-                    margin-bottom:40px;
+                    margin-top:70px; 
+                    margin-bottom:px;
                     color:#3f4652 "
-            >To be Continued ...
+            >Our Partners
         </h2>
+        <v-row class="mt-12 mr-8 ml-8 mb-10">
+            <v-col></v-col>
+            <v-col v-for="i in partners" :key="i" cols="12" md="3" sm="12" xs="12">
+                <v-card 
+                    class="pa-3 pb-1 mx-auto"
+                    max-width="300px"
+                    color="rgba(39,44,51, 0.15)"
+                    hover 
+                    elevation="8"
+                    rounded
+
+                    >
+                    <img class="partner-img" :src=i />
+                </v-card>
+            </v-col>
+            <v-col></v-col>
+        </v-row>
     </v-container>
 </template>
 <script>
 import banner from "../assets/HomePage/Banner.jpg"
+import sns from "../assets/Partners/sns.png"
+import suiWhale from "../assets/Partners/suiwhale.png"
+import suiEcosystem from "../assets/Partners/suiEcosystem.png"
 export default {
     data: () => ({
         banner: banner,
+        partners: [
+           sns, suiWhale, suiEcosystem
+        ]
     }) 
 }
 </script>
 <style scoped>
+
+.partner-img {
+    max-width:100%;
+}
 .text-f {
     font-family: "Questrian";
     color:#272c33;

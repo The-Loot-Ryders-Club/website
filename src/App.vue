@@ -24,6 +24,30 @@
             </router-link>
           </v-list-item>
 
+          <v-list-item class="align-center justify-center fill-height" style="margin-top:-7px">
+            <v-row class="ma-0 pa-0">
+              <v-col
+                  cols=""
+                >
+                  <v-btn
+                    class="mx-3"
+                    dark
+                    href="https://twitter.com/LootRydersClub" target="_blank"
+                    color="#3f4652"
+                   >
+                    <v-icon color="white" >$vuetify.icons.twitter</v-icon>
+                  </v-btn>
+                  <v-btn
+                    class="mx-3"
+                    dark
+                    href="https://discord.gg/lootryders" target="_blank" 
+                    color="#3f4652"
+                   >
+                    <v-icon color="white" >$vuetify.icons.discord</v-icon>
+                  </v-btn>
+              </v-col>
+            </v-row>
+          </v-list-item>
 
           <v-list-item class="align-center justify-center fill-height font">
             <v-btn large color="#3f4652" elevation="12" style="color: white ;font-size: 12px; min-width: 200px;" >
@@ -96,7 +120,7 @@
             icons
             large
             dark
-            href="https://discord.gg/rHeXNFgSJj" target="_blank"
+            href="https://discord.gg/lootryders" target="_blank"
          
         >
             <v-icon>$vuetify.icons.discord</v-icon>
