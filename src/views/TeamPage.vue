@@ -68,7 +68,7 @@
                             class="mx-3"
                             small
                             dark
-                            href="https://twitter.com/PRO100SKILL8" target="_blank"
+                            href="https://twitter.com/pro100web3" target="_blank"
                             color="transparent"
                         >
                             <v-icon color="#272c33" >$vuetify.icons.twitter</v-icon>
