@@ -44,11 +44,11 @@
                             primary-title 
                             class="v-card-title-text justify-center text-f pt-8 pb-8" 
                             style="color:#f4760d"
-                            >Minting Page
+                            >Minting Event
                         </v-card-title>
                         <v-card-text class="v-card-main-text justify-center text-center text-f pb-8">
-                            We have started developing and would be releasing our own staking page, with 
-                            the plan to fullfill all our thoughts and set a right fundamental functionality 
+                            We have partnered with Clutchy Launchpad who will be helping with our fundamental
+                            plan to fullfill all our thoughts and develop all the necessary functionality  
                             for our collection.
                         </v-card-text>
                 </v-card>
@@ -64,8 +64,7 @@
                     max-width="400px">
                         <v-card-title  
                             primary-title 
-                            class="v-card-title-text justify-center text-f pt-8 pb-8" 
-                            style="color:#c6a229"
+                            class="v-card-title-text justify-center text-f pt-8 pb-8" style="color:#c6a229"
                             >Staking Page
                         </v-card-title>
                         <v-card-text class="v-card-main-text justify-center text-center text-f pb-8">
@@ -128,11 +127,11 @@
             >Our Partners
         </h2>
         <v-row class="mt-12 mr-8 ml-8 mb-10">
-            <v-col></v-col>
+            <!-- <v-col></v-col> -->
             <v-col v-for="i in partners" :key="i" cols="12" md="3" sm="12" xs="12">
                 <v-card 
                     class="pa-3 pb-1 mx-auto"
-                    max-width="225px"
+                    max-width="250px"
                     color="rgba(39,44,51, 0.15)"
                     hover 
                     elevation="8"
@@ -142,7 +141,7 @@
                     <img class="partner-img" :src=i />
                 </v-card>
             </v-col>
-            <v-col></v-col>
+            <!-- <v-col></v-col> -->
         </v-row>
     </v-container>
 </template>
@@ -151,11 +150,12 @@ import banner from "../assets/HomePage/Banner.jpg"
 import sns from "../assets/Partners/sns.png"
 import suiWhale from "../assets/Partners/suiwhale.png"
 import suiEcosystem from "../assets/Partners/suiEcosystem.png"
+import clutchy from "../assets/Partners/clutchy.png"
 export default {
     data: () => ({
         banner: banner,
         partners: [
-           sns, suiWhale, suiEcosystem
+           sns, clutchy, suiWhale, suiEcosystem, 
         ]
     }) 
 }
