@@ -142,9 +142,9 @@
                 </v-card>
             </v-col>
         </v-row> -->
-        <v-row class="mt-12 mr-8 ml-8  row-break">
+        <v-row class="mt-12 mr-8 ml-8 row-break">
             <v-col></v-col>
-            <v-col v-for="i in partners_1" :key="i" cols="12" md="2" sm="12" xs="12">
+            <v-col v-for="i in partners_1" :key="i" cols="12" md="3" sm="12" xs="12">
                 <v-card 
                     class=" pa-3 pb-1 mx-auto"
                     max-width="300px"
@@ -161,7 +161,7 @@
         </v-row>
         <v-row class="mr-8 ml-8 mb-6">
             <v-col></v-col>
-            <v-col v-for="i in partners_2" :key="i" cols="12" md="2" sm="12" xs="12">
+            <v-col v-for="i in partners_2" :key="i" cols="12" md="3" sm="12" xs="12">
                 <v-card 
                     class=" pa-3 pb-1 mx-auto"
                     max-width="300px"
@@ -188,9 +188,6 @@ import buzz from "../assets/Partners/buzz.png"
 export default {
     data: () => ({
         banner: banner,
-        partners: [
-            clutchy, sns, buzz, suiWhale, suiEcosystem, 
-        ],
         partners_1: [
             clutchy, sns,
         ],
