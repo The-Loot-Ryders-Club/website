@@ -39,7 +39,7 @@
                 outlined
                 
             >
-            Download</v-btn>
+            Mint</v-btn>
             </v-col>
         </v-row>
         <v-row align="center" justify="center" class="mt-8 ">

@@ -28,7 +28,7 @@
                         </v-btn>
                       
                     </v-card-title>
-                    <v-card-subtitle class="pl-0 pt-2 text-f" style="font-size: 18px">Co-Founder / CEO </v-card-subtitle>
+                    <v-card-subtitle class="pl-0 pt-2 text-f" style="font-size: 18px">Co-Founder</v-card-subtitle>
                 </v-card>
             </v-col>
             <v-col  md="6" sm="6" class="mt-5 left-p-mar ">
@@ -50,7 +50,7 @@
                             <v-icon color="#272c33" >$vuetify.icons.twitter</v-icon>
                         </v-btn>
                     </v-card-title>
-                    <v-card-subtitle class="pl-0 pt-2 text-f" style="font-size: 18px">Co-Founder / CEO</v-card-subtitle>
+                    <v-card-subtitle class="pl-0 pt-2 text-f" style="font-size: 18px">Co-Founder</v-card-subtitle>
                 </v-card>
             </v-col>
         </v-row>
@@ -74,7 +74,7 @@
                             <v-icon color="#272c33" >$vuetify.icons.twitter</v-icon>
                         </v-btn>
                     </v-card-title> 
-                    <v-card-subtitle class="pl-0 pt-2 text-f" style="font-size: 18px">Co-Founder / CXO </v-card-subtitle>
+                    <v-card-subtitle class="pl-0 pt-2 text-f" style="font-size: 18px">Resource Manager</v-card-subtitle>
                 </v-card>
             </v-col>
             <v-col md="6" sm="6" class="mt-5 left-p-mar">
