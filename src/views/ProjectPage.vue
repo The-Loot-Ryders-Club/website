@@ -147,8 +147,8 @@
             <v-col v-for="i in partners_1" :key="i" cols="12" md="3" sm="12" xs="12">
                 <v-card 
                     class=" pa-3 pb-1 mx-auto"
-                    max-width="300px"
-                    max-height="300px"
+                    max-width="250px"
+                    max-height="250px"
                     color="rgba(39,44,51, 0.15)"
                     hover 
                     elevation="8"
@@ -164,8 +164,8 @@
             <v-col v-for="i in partners_2" :key="i" cols="12" md="3" sm="12" xs="12">
                 <v-card 
                     class=" pa-3 pb-1 mx-auto"
-                    max-width="300px"
-                    max-height="300px"
+                    max-width="250px"
+                    max-height="250px"
                     color="rgba(39,44,51, 0.15)"
                     hover 
                     elevation="8"
