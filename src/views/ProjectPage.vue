@@ -90,7 +90,7 @@
                             >Reward System
                         </v-card-title>
                         <v-card-text class="v-card-main-text justify-center text-center text-f pb-8">
-                            Reward system is the last step towards preparation & fulltilling 
+                            Reward system is the last step towards preparation & fullfilling 
                             the fundamentals for the Lootbox system. It's Functionality would be implemented 
                             on top of the staking utility and our NFT's.
                         </v-card-text>
@@ -113,7 +113,7 @@
                         </v-card-title>
                         <v-card-text class="v-card-main-text justify-center text-center text-f pb-8">
                             Goal for our early roadmap would be the finalization of Lootboxes
-                            system, that shares totally new experience to our users. You will be able to 
+                            system, that provides totally new experience to our users. You will be able to 
                             unlock new real-world rewards and benefits.
                         </v-card-text>
                 </v-card>
@@ -126,23 +126,56 @@
                     color:#3f4652 "
             >Our Partners
         </h2>
-        <v-row class="mt-12 mr-8 ml-8 mb-10">
-            <!-- <v-col></v-col> -->
+        <!-- <v-row class="mt-12 mr-8 ml-8 mb-10">
+            <v-col></v-col>  
             <v-col v-for="i in partners" :key="i" cols="12" md="3" sm="12" xs="12">
                 <v-card 
-                    class="pa-3 pb-1 mx-auto"
+                    class=" pa-3 pb-1 mx-auto"
                     max-width="250px"
+                    max-height="250px"
                     color="rgba(39,44,51, 0.15)"
                     hover 
                     elevation="8"
                     rounded
-
                     >
-                    <img class="partner-img" :src=i />
+                        <img class="partner-img" :src=i />
                 </v-card>
             </v-col>
-            <!-- <v-col></v-col> -->
+        </v-row> -->
+        <v-row class="mt-12 mr-8 ml-8  row-break">
+            <v-col></v-col>
+            <v-col v-for="i in partners_1" :key="i" cols="12" md="2" sm="12" xs="12">
+                <v-card 
+                    class=" pa-3 pb-1 mx-auto"
+                    max-width="300px"
+                    max-height="300px"
+                    color="rgba(39,44,51, 0.15)"
+                    hover 
+                    elevation="8"
+                    rounded
+                    >
+                        <img class="partner-img" :src=i />
+                </v-card>
+            </v-col>
+            <v-col></v-col>
         </v-row>
+        <v-row class="mr-8 ml-8 mb-6">
+            <v-col></v-col>
+            <v-col v-for="i in partners_2" :key="i" cols="12" md="2" sm="12" xs="12">
+                <v-card 
+                    class=" pa-3 pb-1 mx-auto"
+                    max-width="300px"
+                    max-height="300px"
+                    color="rgba(39,44,51, 0.15)"
+                    hover 
+                    elevation="8"
+                    rounded
+                    >
+                        <img class="partner-img" :src=i />
+                </v-card>
+            </v-col>
+            <v-col></v-col>
+        </v-row>        
     </v-container>
 </template>
 <script>
@@ -151,12 +184,19 @@ import sns from "../assets/Partners/sns.png"
 import suiWhale from "../assets/Partners/suiwhale.png"
 import suiEcosystem from "../assets/Partners/suiEcosystem.png"
 import clutchy from "../assets/Partners/clutchy.png"
+import buzz from "../assets/Partners/buzz.png"
 export default {
     data: () => ({
         banner: banner,
         partners: [
-           sns, clutchy, suiWhale, suiEcosystem, 
-        ]
+            clutchy, sns, buzz, suiWhale, suiEcosystem, 
+        ],
+        partners_1: [
+            clutchy, sns,
+        ],
+        partners_2: [
+            suiWhale, buzz, suiEcosystem
+        ],
     }) 
 }
 </script>
@@ -204,7 +244,6 @@ export default {
 }
 
 
-
 @media screen and (max-width: 820px) {
     .losung {
         font-size:38px;
@@ -242,8 +281,11 @@ export default {
         font-size: 32px;
     }
 }
-
-
+@media screen and (max-width: 950px) {
+    .row-break {
+        margin-bottom: -62.5px;
+    }
+}
 
 /* @media screen and (max-width: 470px) {
     .losung {

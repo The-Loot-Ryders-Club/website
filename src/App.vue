@@ -100,6 +100,12 @@
           Team
         </v-btn>
 
+        <!-- <v-btn large color="#3f4652" style="color: white;" class="navigation mx-4 font"  active-class="no-active" >
+          <div>
+            Connect wallet <my-react-button/>
+          </div>
+        </v-btn> -->
+
         <v-btn
             class="mx-2"
             color="white"
@@ -130,9 +136,10 @@
 
     
     <!--  -->
-    <v-main style="background-color:#9bcde0"> <!-- ADD8E6 -->
-      <router-view/>
-   </v-main>
+    
+      <v-main style="background-color:#9bcde0"> <!-- ADD8E6 -->
+          <router-view/>
+      </v-main>
   </v-app>
 </template>
 
@@ -140,10 +147,14 @@
 import logo from "./assets/HomePage/2Logo.png";
 import nav_logo from "./assets/HomePage/s_logo.png"
 import banner from "./assets/HomePage/Banner.jpg"
+// import { WalletKitProvider } from "@mysten/wallet-kit";
+// import { ConnectButton } from "@mysten/wallet-kit";
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
+    // 'my-react-component': WalletKitProvider,
+    // 'my-react-button':  ConnectButton,
+    // // HelloWorld,
   },
 
   data: () => ({
