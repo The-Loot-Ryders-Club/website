@@ -32,7 +32,7 @@
                   <v-btn
                     class="mx-3"
                     dark
-                    href="https://twitter.com/LootRydersClub" target="_blank"
+                    href="" target="_blank"
                     color="#3f4652"
                    >
                     <v-icon color="white" >$vuetify.icons.twitter</v-icon>
@@ -40,32 +40,32 @@
                   <v-btn
                     class="mx-3"
                     dark
-                    href="https://discord.gg/lootryders" target="_blank" 
+                    href="" target="_blank" 
                     color="#3f4652"
                    >
-                    <v-icon color="white" >$vuetify.icons.discord</v-icon>
+                    <v-icon color="white" >$vuetify.icons.instagram</v-icon>
                   </v-btn>
               </v-col>
             </v-row>
           </v-list-item>
 
-          <v-list-item class="align-center justify-center fill-height font">
+          <!-- <v-list-item class="align-center justify-center fill-height font">
             <v-btn large color="#3f4652" elevation="12" style="color: white ;font-size: 12px; min-width: 200px;" >
               <router-link style="all:unset" to="/project">Roadmap</router-link>
             </v-btn>
-          </v-list-item>
+          </v-list-item> -->
 
            <v-list-item class="mt-6 align-center justify-center fill-height font">
             <v-btn large color="#3f4652" elevation="12" style="color: white ; font-size: 12px; min-width: 200px;">
-             <router-link style="all:unset" to="/playground">PlayGround</router-link>
+             <router-link style="all:unset" to="/playground">Library</router-link>
             </v-btn>
           </v-list-item>
 
-          <v-list-item class="mt-6 align-center justify-center fill-height font">
+          <!-- <v-list-item class="mt-6 align-center justify-center fill-height font">
             <v-btn large color="#3f4652" elevation="12" style="color: white ; font-size: 12px; min-width: 200px;">
              <router-link style="all:unset" to="/team">Team</router-link>
             </v-btn>
-          </v-list-item>
+          </v-list-item> -->
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -88,24 +88,14 @@
       <v-container fluid fill-height  class="d-none d-md-flex">
         <v-spacer></v-spacer>
 
-        <v-btn  large color="#3f4652" style="color: white;" class="navigation mx-4 font " to="project" active-class="no-active" >
+        <!-- <v-btn  large color="#3f4652" style="color: white;" class="navigation mx-4 font " to="project" active-class="no-active" >
           Roadmap
-        </v-btn>
+        </v-btn> -->
        
         <v-btn large color="#3f4652" style="color: white;" class="navigation mx-4 font"  min-width=200px; to="playground" active-class="no-active" > 
-          PlayGround
+          Library
         </v-btn>
    
-        <v-btn large color="#3f4652" style="color: white;" class="navigation mx-4 font"  to="team" active-class="no-active" >
-          Team
-        </v-btn>
-
-        <!-- <v-btn large color="#3f4652" style="color: white;" class="navigation mx-4 font"  active-class="no-active" >
-          <div>
-            Connect wallet <my-react-button/>
-          </div>
-        </v-btn> -->
-
         <v-btn
             class="mx-2"
             color="white"
@@ -113,8 +103,7 @@
             icon
             large
             dark
-            href="https://twitter.com/LootRydersClub" target="_blank"
-         
+            href="" target="_blank"
         >
             <v-icon>$vuetify.icons.twitter</v-icon>
         </v-btn>
@@ -126,17 +115,13 @@
             icons
             large
             dark
-            href="https://discord.gg/lootryders" target="_blank"
-         
+            href="" target="_blank"
         >
-            <v-icon>$vuetify.icons.discord</v-icon>
+            <v-icon>$vuetify.icons.instagram</v-icon>
         </v-btn>
       </v-container>
     </v-app-bar>
 
-    
-    <!--  -->
-    
       <v-main style="background-color:#9bcde0"> <!-- ADD8E6 -->
           <router-view/>
       </v-main>

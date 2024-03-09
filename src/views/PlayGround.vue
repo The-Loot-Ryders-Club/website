@@ -1,48 +1,30 @@
 <template>
     <v-container class="mt-5">
-        <h2 class="text-f mr-2 ml-2" 
-            style="text-align:center;
-                    margin-top:25px; 
-                    color:#3f4652 "
-            >Welcome To Playground!
-        </h2>
-        <h3 class="text-f " 
-            style="text-align:center;
-                    margin-top:10px; 
-                    margin-bottom:30px;
-                    color:#3f4652"
-            >Play around with some different traits and design your rabbit pfp
-        </h3>
-        <v-row>
-            <v-col align="center">
-                <!-- <v-card max-width="410px" class="" color="#189AB4">  -->
-                    <!-- <v-img :src="'https://nftstorage.link/ipfs/bafybeiegfhz2w2lfhk63alld3uoraioc6zh7d77ako4mr3rn2a2i5e5kju/' + pic_id + '.png' "/>  -->
-                        <img class="main-img" :src="require('../assets/output/img/' + pic_id + '.png')"/>
-                    <!-- <img :src="this.images[pic_id].pathLong"/> -->
-                    <!-- <v-lazy-image :src="require('../assets/output/img/0001.png')"/>  -->
-             <!-- </v-card> -->
-            </v-col>
-        </v-row> 
-        <v-row>
-            <v-col align="center">
-        <!-- <v-btn  class="ma-2 font-t" 
-                outlined 
-                href="../assets/output/img/0000.png"
-                download="LootRyder.png"
-            >
-        Download</v-btn> -->
-            <v-btn 
-                @click="downloadImage(require('../assets/output/img/' + pic_id + '.png'), 'LootRyder.png')"
-                class="mt-4 fb-btn text-f"
-                style="background:#B9D9EB"
-                x-large
-                outlined
-                
-            >
-            Mint</v-btn>
-            </v-col>
-        </v-row>
-        <v-row align="center" justify="center" class="mt-8 ">
+        <h1 class="text-f mr-2 ml-2 mb-4" 
+            style="text-align:center; margin-top:25px; color:#3f4652"
+            >Welcome To Our Library!
+        </h1>
+
+        <div>
+            <v-row v-for="folder in folders" :key="folder.FileName">
+                <v-row align="center" justify="center" class="mt-2 mb-2">
+                    <h2 class="text-f mr-2 ml-2 mb-4" 
+                        style="text-align:center; margin-top:25px; color:#3f4652"
+                    > 
+                        {{ folder.FileName }}
+                    </h2>
+                </v-row>
+                    <v-row align="center" justify="center">
+                    <v-col cols="12" sm="4" md="4" xs="" lg="3" xl="2" v-for="image in folder.images" :key="image">
+                     
+                        <!-- <img :src="require('../assets/Library/' + image)" /> -->
+                        <img class="main-img" :src="require('@/assets/Library/'+ folder.FileName + '/' +image)" />
+                    </v-col>
+                </v-row>
+            </v-row>
+        </div>
+
+        <!-- <v-row align="center" justify="center" class="mt-8 ">
             <v-col cols=6 md="2" sm="3"   align="center" justify="center" class="">
                 <v-select
                     class="font-t"
@@ -99,20 +81,20 @@
                     filled
                 ></v-select>
             </v-col>
-        </v-row>
-        <h3 class="text-f " 
+        </v-row> -->
+        <h3 class="text-f mt-16" 
             style="text-align:center;
                     margin-top:20px; 
                     margin-bottom:30px;
                     color:#3f4652"
-            >More trait & layouts to Come!
+            >More sticker are coming soon!
         </h3>
     </v-container>
 </template>
-<script>
-import pro_pfp from "../assets/TeamPage/pro_pfp.png"
+<script>import pro_pfp from "../assets/TeamPage/pro_pfp.png"
 import idx from "../assets/json-output.js"
 const zeroPad = (num, places) => String(num).padStart(places, '0')
+
 export default {
     data: () => ({
         pic_id:'381',
@@ -129,6 +111,8 @@ export default {
         selected_option_4: '',
         idx:idx,
         images:[],
+        stickers: [],
+        folders: [],
         
     }), 
     methods: {
@@ -184,6 +168,91 @@ export default {
                 })
                 .catch(() => alert('An error sorry'));
         },
+
+        populateData() {
+            this.folders = [
+                {
+                "FileName": "AOT",
+                "images": [
+                    "mikasa2.png",
+                    "hange.png",
+                    "levi.png",
+                    "historia.png",
+                    "jean.png",
+                    "armin.png",
+                    "eren2.png",
+                    "annie.png",
+                    "reiner.png",
+                    "sasha.png",
+                    "eren1.png"
+                ]
+                },
+                {
+                "FileName": "Haikyuu",
+                "images": [
+                    "bokuto2.png",
+                    "kuroo.png",
+                    "nishinoya.png",
+                    "kenma.png",
+                    "kageyama.png",
+                    "oikawa.png",
+                    "sugawara.png",
+                    "hinata1.png",
+                    "tsukishima.png",
+                    "akaashi.png",
+                    "bokuto3.png"
+                ]
+                },
+                {
+                "FileName": "JJK",
+                "images": [
+                    "inumaki.png",
+                    "yuta1.png",
+                    "maki.png",
+                    "nanami.png",
+                    "megumi1.png",
+                    "suguru2.png",
+                    "nobara.png",
+                    "sukuna.png",
+                    "megumi2.png",
+                    "gojo1.png",
+                    "gojo2.png",
+                    "yuji.png",
+                ]
+                },
+                {
+                "FileName": "One Piece",
+                "images": [
+                    "Gol D Roger.png",
+                    "Nami.png",
+                    "Shanks.png",
+                    "Ace.png",
+                    "Zoro.png",
+                    "sanji.png",
+                    "Robin.png",
+                    "Luffy.png",
+                    "Chopper.png",
+                    "trafalgar111.png"
+                ]
+                },
+                {
+                "FileName": "Demon Slayer",
+                "images": [
+                    "Kanayo.png",
+                    "zenitsu1.png",
+                    "muzan.png",
+                    "Shinobu.png",
+                    "inosuke.png",
+                    "tanjiro2.png",
+                    "Tomioka1.png",
+                    "tanjiro1.png",
+                    "nezuko.png",
+                    "muichiro.png",
+                    "mitsuri.png"
+                ]
+                }
+            ];
+        }
         // importAll(r) {
         //     r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })));
         // },
@@ -195,15 +264,19 @@ export default {
         this.selected_option_2= 'Zombie',
         this.selected_option_3= 'BobberHoodie',
         this.selected_option_4= 'Exp_1',
-        this.generate_nft()
+        this.generate_nft(),
+
+        this.populateData();
+
+
     }, 
 }
 </script>
 <style scoped>
 .main-img {
-    border: 6px solid #189AB4;
+    /* border: 3px solid #189AB4; */
     /* padding: 15px; */
-    max-width:400px;
+    max-width:250px
 }
 
 .text-f {
@@ -224,9 +297,15 @@ export default {
     border: thin solid #189AB4;
   }
   
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 600px) {
     .main-img {
         max-width: 100%
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .main-img {
+        max-width: 200px
     }
 }
 
