@@ -61,11 +61,11 @@
             </v-btn>
           </v-list-item>
 
-          <!-- <v-list-item class="mt-6 align-center justify-center fill-height font">
+          <v-list-item class="mt-6 align-center justify-center fill-height font">
             <v-btn large color="#854F6C" elevation="12" style="color: white ; font-size: 12px; min-width: 200px;">
-             <router-link style="all:unset" to="/team">Team</router-link>
+             <router-link style="all:unset" to="/contactus">Contact Us</router-link>
             </v-btn>
-          </v-list-item> -->
+          </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
