@@ -1,5 +1,5 @@
 <template>
-    <v-container style="background-color: transparent;">
+    <v-container>
         <h1 class="text-f mr-2 ml-2 mb-4" 
             style="text-align:center; margin-top:25px"
         >
@@ -36,7 +36,7 @@
             <v-btn 
                 :disabled="!valid" 
                 @click="submit" 
-                class="text-f"
+                class="text-f mt-5"
                 style="background-color: #FBE4D8; color:black !important"
             >
                 Send Inquiry
@@ -82,45 +82,18 @@
         color:#FBE4D8 !important;
     };
 
-    // ::v-deep .v-input__slot::before { border-color: #FBE4D8 !important;  }
-    // ::v-deep .v-label {
-    //     color: #FBE4D8 !important;
-    // };  
-
-    // /* If you are also looking to adjust the input and textarea text color, include these */
-    // ::v-deep .v-input__control > .v-input__slot > .v-text-field__slot input,
-    // ::v-deep .v-textarea__slot textarea {
-    //     color: #FBE4D8 !important;
-    // };
-
-    // ::v-deep .v-input__icon--clear .v-icon,
-    // ::v-deep .v-input__icon--prepend .v-icon,
-    // ::v-deep .v-input__icon--append .v-icon,
-    // ::v-deep .v-input__icon--append-outer .v-icon {
-    //     color: #FBE4D8 !important;
-    // };
-
-    // /* Adjusting focus styles if needed */
-    // ::v-deep .v-input__slot:focus {
-    //     outline: none !important;
-    //     border-bottom: 1px solid #FBE4D8 !important;
-    // };
-
     ::v-deep .v-label,
     ::v-deep .v-input__control > .v-input__slot > .v-text-field__slot input,
-    ::v-deep .v-textarea__slot textarea {
-    color: #FBE4D8  !important;
-    }
-
+    ::v-deep .v-textarea textarea,
     ::v-deep .v-input__icon--clear .v-icon,
     ::v-deep .v-input__icon--prepend .v-icon,
     ::v-deep .v-input__icon--append .v-icon,
     ::v-deep .v-input__icon--append-outer .v-icon {
-    color: #FBE4D8  !important;
+        color: #FBE4D8  !important;
     }
 
     ::v-deep .v-input__slot::before {
-    border-color: #FBE4D8 !important;
+        border-color: #FBE4D8 !important;
     }
 
     ::v-deep .v-input__slot:focus {
