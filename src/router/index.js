@@ -2,8 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from "../views/HomePage.vue"
 import ProjectPage from "../views/ProjectPage.vue"
-import PlayGround from "../views/PlayGround.vue"
-import TeamPage from "../views/TeamPage.vue"
+import LibraryPage from "../views/LibraryPage.vue"
+// import TeamPage from "../views/TeamPage.vue"
+import ContactUsPage from "../views/ContactUs.vue"
 
 
 Vue.use(VueRouter)
@@ -20,14 +21,14 @@ const routes = [
         component: ProjectPage,
     },
     {
-        path: '/playground',
-        name: 'NFTPlayground',
-        component: PlayGround,
+        path: '/library',
+        name: 'Library',
+        component: LibraryPage,
     },
     {
-        path: '/team',
-        name: 'TeamInfo',
-        component: TeamPage,
+        path: '/contactus',
+        name: 'ContactUsPage',
+        component: ContactUsPage,
     }
 ]
 

@@ -43,3 +43,5 @@ def generate_folder_files_json(directory, output_file):
 directory = "./assets/Library" # Change this to your directory path
 output_file = "output.json"
 generate_folder_files_json(directory, output_file)
+
+

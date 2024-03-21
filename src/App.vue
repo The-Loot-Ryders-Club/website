@@ -3,7 +3,7 @@
     <v-navigation-drawer
       v-model="drawer"
       style="max-width: 250px; max-height:100%"
-      color="#272c33"
+      color="#2B124C"
       temporary
       app
       bottom
@@ -20,11 +20,11 @@
 
           <v-list-item>
             <router-link to="/">
-            <v-img class="mb-3" max-width="150px" :src="nav_logo"/>
+              <v-img class="" max-width="250px" :src="logo"/>
             </router-link>
           </v-list-item>
 
-          <v-list-item class="align-center justify-center fill-height" style="margin-top:-7px">
+          <v-list-item class="align-center justify-center fill-height" style="margin-top:-45px">
             <v-row class="ma-0 pa-0">
               <v-col
                   cols=""
@@ -33,36 +33,36 @@
                     class="mx-3"
                     dark
                     href="" target="_blank"
-                    color="#3f4652"
+                    color="#854F6C"
                    >
-                    <v-icon color="white" >$vuetify.icons.twitter</v-icon>
+                    <v-icon color="white">$vuetify.icons.twitter</v-icon>
                   </v-btn>
                   <v-btn
                     class="mx-3"
                     dark
                     href="" target="_blank" 
-                    color="#3f4652"
+                    color="#854F6C"
                    >
-                    <v-icon color="white" >$vuetify.icons.instagram</v-icon>
+                    <v-icon color="white">$vuetify.icons.instagram</v-icon>
                   </v-btn>
               </v-col>
             </v-row>
           </v-list-item>
 
           <!-- <v-list-item class="align-center justify-center fill-height font">
-            <v-btn large color="#3f4652" elevation="12" style="color: white ;font-size: 12px; min-width: 200px;" >
+            <v-btn large color="#854F6C" elevation="12" style="color: white ;font-size: 12px; min-width: 200px;" >
               <router-link style="all:unset" to="/project">Roadmap</router-link>
             </v-btn>
           </v-list-item> -->
 
-           <v-list-item class="mt-6 align-center justify-center fill-height font">
-            <v-btn large color="#3f4652" elevation="12" style="color: white ; font-size: 12px; min-width: 200px;">
-             <router-link style="all:unset" to="/playground">Library</router-link>
+          <v-list-item class="mt-6 align-center justify-center fill-height font">
+            <v-btn large color="#854F6C" elevation="12" style="color: white ; font-size: 12px; min-width: 200px;">
+              <router-link style="all:unset" to="/library">Library</router-link>
             </v-btn>
           </v-list-item>
 
           <!-- <v-list-item class="mt-6 align-center justify-center fill-height font">
-            <v-btn large color="#3f4652" elevation="12" style="color: white ; font-size: 12px; min-width: 200px;">
+            <v-btn large color="#854F6C" elevation="12" style="color: white ; font-size: 12px; min-width: 200px;">
              <router-link style="all:unset" to="/team">Team</router-link>
             </v-btn>
           </v-list-item> -->
@@ -72,34 +72,38 @@
 
     <v-app-bar
       app
-      color="#9bcde0"
+      color="#2B124C"
       height=110%
       flat
       hide-on-scroll
       
     >
       <router-link to="/">
-        <v-img  class="logo-text-out logo mb-2 ml-2 mr-4" :src="logo"/>
+        <v-img  class="logo-text-out logo mb-2 ml-2 mr-4 mt-10" :src="logo"/>
       </router-link>
       
       <v-spacer></v-spacer>
-      <v-app-bar-nav-icon color="#272c33" class="d-flex d-md-none " style="margin-right: 15px;" @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon color="#FBE4D8" class="d-flex d-md-none mr-6" style="margin-right: 15px;" @click="drawer = !drawer"></v-app-bar-nav-icon>
    
-      <v-container fluid fill-height  class="d-none d-md-flex">
+      <v-container fluid fill-height class="d-none d-md-flex">
         <v-spacer></v-spacer>
 
-        <!-- <v-btn  large color="#3f4652" style="color: white;" class="navigation mx-4 font " to="project" active-class="no-active" >
+        <!-- <v-btn  large color="#854F6C" style="color: white;" class="navigation mx-4 font " to="project" active-class="no-active" >
           Roadmap
         </v-btn> -->
        
-        <v-btn large color="#3f4652" style="color: white;" class="navigation mx-4 font"  min-width=200px; to="playground" active-class="no-active" > 
+        <v-btn large color="#854F6C" style="color: white;" class="navigation mx-4 font"  min-width=200px; to="library" active-class="no-active" > 
           Library
+        </v-btn>
+
+        <v-btn large color="#854F6C" style="color: white;" class="navigation mx-4 font"  min-width=200px; to="contactus" active-class="no-active" > 
+          Contact us
         </v-btn>
    
         <v-btn
             class="mx-2"
             color="white"
-            style="background: #3f4652"
+            style="background: #854F6C"
             icon
             large
             dark
@@ -110,7 +114,7 @@
         <v-btn
             class="mx-4"
             olor="white"
-            style="background: #3f4652"
+            style="background: #854F6C"
             icon
             icons
             large
@@ -122,14 +126,14 @@
       </v-container>
     </v-app-bar>
 
-      <v-main style="background-color:#9bcde0"> <!-- ADD8E6 -->
+      <v-main style="background-color:#2B124C"> <!-- ADD8E6 -->
           <router-view/>
       </v-main>
   </v-app>
 </template>
 
 <script>
-import logo from "./assets/HomePage/2Logo.png";
+import logo from "./assets/HomePage/stickers-logo.png";
 import nav_logo from "./assets/HomePage/s_logo.png"
 import banner from "./assets/HomePage/Banner.jpg"
 // import { WalletKitProvider } from "@mysten/wallet-kit";
@@ -210,7 +214,7 @@ export default {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 150px;
 }
 
 
